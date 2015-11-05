@@ -21,13 +21,25 @@ Ubuntu linux je dalším příkladem, ač vychází z výše zmíněné distribu
 
 \section{CentOS}
 
-Jako příklad systémů které využívají instalátor Anaconda jsem vybral systém CentOS. Tato zkratka znamená Community ENterprise Operating System. Jedná se v podstatě o systém Red Hat Enterprise Linux, ovšem bez podpory a opravných patchů od společnosti Red Hat. V současné době instalátor Anaconda používá též pouze textovou reprezentaci disku. Rozdíl oproti ostatním distribucím tvoří seznam změn který je zobrazen před finálním potvrzením a započetím formátování. Na obrázcích můžeme vidět příklad tohoto seznamu. Situaci zpřehledňuje ale pouze pro malý počet změn. Seznam s 30 záznamy o změnách je nepřehledný. Právě tuto situaci se snažím zlepšit v této práci.
+Jako příklad systémů které využívají instalátor Anaconda jsem vybral systém CentOS. Tato zkratka znamená Community ENterprise Operating System. Jedná se v podstatě o systém Red Hat Enterprise 
+Linux, ovšem bez podpory a opravných patchů od společnosti Red Hat. V současné době instalátor Anaconda používá též pouze textovou reprezentaci disku. Rozdíl oproti ostatním distribucím tvoří 
+seznam změn který je zobrazen před finálním potvrzením a započetím formátování. Na obrázcích můžeme vidět příklad tohoto seznamu. Situaci zpřehledňuje ale pouze pro malý počet změn. Seznam s 30 záznamy o změnách je nepřehledný. Právě současný stav se snažím zlepšit v této práci.
 
 \section{Windows 10}
 
+Pro srovnání uvádím i příklad nejrozšířenějšího systému, Windows. Vybral jsem, v současnosti nejrozšířenější verzi, Windows 10. Překvapivě se člověk ani zde nesetká s vizuálními pomůckami.
+Tvůrci instalátoru spoléhají na automatickou instalaci a rozdělení disku s tím že pokročilou verzi s manuálním nastavováním zvolí uživatel který se vyzná i bez vodítek. V předchozích verzích
+byl použit podobný přístup jako má instalátor distribuce Ubuntu, tj. obdélník znázorňující disk a barevné vyznačení oddílů.
 \section{Programy sloužící pro manipulaci s disky}
 
 \section{Gpatred}
 
+Program Gparted je zástupcem programů které je možné spouštět i mimo fázi instalace systému. Dříve byl součástí instálátoru systému Ubuntu ale je možné jej spouštět i samostatně , například 
+v případě potřeby zvětšovat úložné kapacitu virtuálních disků či disků jejichž souborový systém umožňuje pozdější modifikaci. Opět používá známé obdélníkové schéma. Každý disk je reprezentovaný obdélníkem a další informace jsou zobrazovány barevnými rámci uvnitř těchto obdélníků. Narozdíl od ostatních zmíněných programů obsahuje Gparted i grafické widgety pro manipulaci s disky 
+a tím dosahuje efektu WYSIWYG editoru. Příkladem je widget pro zvětšení diskového oddílu který vidíme na obrázku.
+
 \section{blivet-gui}
+
+Posledním příkladem je program na manipulaci s disky který je součástí instalátoru Anaconda, využívá knihovnu nazvanou blivet stejně jako program kterým se zabývá tato práce. Autoři se zprvu rozhodli použít známé schéma avšak brzy narazili na problém s větším počtem disků a virtualizovanými disky. Na přiloženém obrázku vidíme že současné řešení je nedostatečné a použití grafu by
+situaci zpřehlednilo. Jednotlivé úrovně barevných rámců budou znározněny samostatnými uzly grafu s hranami vyznačujícími vztahy mezi nimi. 
 \end{document}
