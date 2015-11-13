@@ -54,7 +54,7 @@ oddíly vytvořené uživatelem. Stejné barvy jsou poté použity u~každého z
 Jako příklad systémů, které využívají instalátor Anaconda jsem vybral systém CentOS. Tato zkratka znamená Community ENterprise Operating System. Na svých stránkách uvádějí \uv{The CentOS Linux
 distribution is a~stable, predictable, manageable and reproducible platform derived from the sources of Red Hat Enterprise Linux (RHEL).}~\cite{CentOS} Jedná se v~podstatě o~systém Red Hat Enterprise 
 Linux, ovšem bez podpory a~oprav od společnosti Red Hat. V~současné době instalátor Anaconda používá též pouze textovou reprezentaci disku. Rozdíl oproti ostatním distribucím tvoří 
-seznam změn, který je zobrazen před finálním potvrzením a~započetím formátování. Na obrázcích č. 3 a~4 můžeme vidět příklad tohoto seznamu. Situaci zpřehledňuje ale pouze pro malý počet změn. Seznam s~mnoha 
+seznam změn, který je zobrazen před finálním potvrzením a~započetím formátování. Na obrázcích č. 3 a~4 můžeme vidět příklad tohoto seznamu. Situaci zpřehledňuje ale pouze pro malý počet změn, Seznam s~mnoha 
 záznamy o~změnách je nepřehledný. Zlepšením uživatelské přívětivosti při finální kontrole před instalací se zabývá tato práce.
 
 \begin{figure}[hb]
@@ -73,8 +73,9 @@ záznamy o~změnách je nepřehledný. Zlepšením uživatelské přívětivosti
 
 \subsection{Windows 10}
 
-Pro srovnání uvádím i~příklad nejrozšířenějšího systému, Windows. Vybral jsem, v~současnosti nejnovější verzi, Windows 10. Překvapivě ani zde nejsou využity vizuální pomůcky.
-Tvůrci instalátoru spoléhají na automatickou instalaci a~rozdělení disku s~tím že pokročilou verzi s~manuálním nastavováním zvolí uživatel, který se zorientuje během instalace i~bez vodítek. Předchozí verze využívají stejný systém jako má distribuce Ubuntu, tj. obdélník znázorňující disk, v~němž jsou barevně vyznačeny diskové oddíly.
+Pro srovnání uvádím i~příklad nejrozšířenějšího systému, Windows. Vybral jsem v~současnosti nejnovější verzi Windows 10. Překvapivě ani zde nejsou využity vizuální pomůcky.
+Tvůrci instalátoru spoléhají na automatickou instalaci a~rozdělení disku s~tím, že pokročilou verzi s~manuálním nastavováním zvolí uživatel, který se zorientuje během instalace i~bez vodítek. Předchozí 
+verze využívají stejný systém jako má distribuce Ubuntu, tj. obdélník znázorňující disk, v~němž jsou barevně vyznačeny diskové oddíly.
 
 \begin{figure}[h]
 \label{fig:win}
@@ -85,12 +86,12 @@ Tvůrci instalátoru spoléhají na automatickou instalaci a~rozdělení disku s
 
 \section{Programy sloužící pro manipulaci s~disky}
 
-\subsection{GPatred}
+\subsection{GParted}
 
 Program GParted je zástupcem programů, které je možné spouštět i~mimo fázi instalace systému. Dříve byl součástí instálátoru systému Ubuntu, ale je možné jej spouštět i~samostatně, například 
  zvětšovat úložné kapacitu virtuálních disků či disků jejichž souborový systém umožňuje pozdější modifikaci. Opět je využito dříve zmíněné schéma obdélníku. Každý disk je reprezentovaný 
 obdélníkem a~další informace jsou zobrazovány barevnými rámci uvnitř těchto obdélníků. Narozdíl od ostatních zmíněných programů obsahuje GParted i~grafické aplikace pro manipulaci s~disky 
-a~tím dosahuje efektu WYSIWYG (What You See Is What You Get, editor, který přímo ukazuje aktuální změny) editoru. Příkladem je aplikace pro zvětšení diskového oddílu, který vidíme na obrázku č. 6.
+a~tím dosahuje efektu WYSIWYG editoru (What You See Is What You Get, editor, který přímo ukazuje aktuální změny). Příkladem je aplikace pro zvětšení diskového oddílu, který vidíme na obrázku č. 6.
 
 \begin{figure}[hb]
 \label{fig:gparted}
@@ -103,7 +104,7 @@ a~tím dosahuje efektu WYSIWYG (What You See Is What You Get, editor, který př
 
 Druhým příkladem je program na manipulaci s~disky, který je součástí instalátoru Anaconda, využívá knihovnu nazvanou blivet. Knihovna blivet je základem pro všechny systémy vycházející ze systému RHEL. Autoři 
 se zprvu rozhodli použít známé schéma, avšak brzy narazili na problém s~větším počtem disků včetně virtuálních. Na obrázku vidíme, že současné řešení je nedostatečné a~použití grafu by
-situaci zpřehlednilo. Jednotlivé úrovně barevných rámců jsou znározněny samostatnými uzly grafu s~hranami vyznačujícími vztahy mezi nimi. 
+situaci zpřehlednilo. Jednotlivé úrovně barevných rámců jsou znázorněny samostatnými uzly grafu s~hranami vyznačujícími vztahy mezi nimi. 
 \printbibliography
 
 \begin{figure}[hb]
