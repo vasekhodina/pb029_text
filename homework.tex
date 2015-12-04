@@ -91,14 +91,8 @@ Jako příklad systémů, které využívají instalátor Anaconda jsem vybral s
 \uv{The CentOS Linux distribution is a~stable, predictable, manageable and reproducible platform derived from the sources of Red Hat Enterprise Linux (RHEL).}~\cite{CentOS} 
 Jedná se v~podstatě o~systém Red Hat Enterprise Linux, ovšem bez podpory a~oprav od společnosti Red Hat. V~současné době instalátor Anaconda používá též pouze textovou 
 reprezentaci disku. Rozdíl oproti ostatním distribucím tvoří seznam změn, který je zobrazen před finálním potvrzením a~započetím formátování. Na obrázcích č. 3 a~4 můžeme
-vidět příklad tohoto seznamu. Situaci zpřehledňuje ale pouze pro malý počet změn, Seznam s~mnoha 
+vidět příklad tohoto seznamu. Situaci zpřehledňuje ale pouze pro malý počet změn, seznam s~mnoha 
 záznamy o~změnách je nepřehledný. Zlepšením uživatelské přívětivosti při finální kontrole před instalací se zabývá tato práce.
-
-\subsection{Windows 10}
-
-Pro srovnání uvádím i~příklad nejrozšířenějšího systému, Windows. Vybral jsem v~současnosti nejnovější verzi Windows 10. Překvapivě ani zde nejsou využity vizuální pomůcky.
-Tvůrci instalátoru spoléhají na automatickou instalaci a~rozdělení disku s~tím, že pokročilou verzi s~manuálním nastavováním zvolí uživatel, který se zorientuje během instalace i~bez vodítek. Předchozí 
-verze využívají stejný systém jako má distribuce Ubuntu\index{Ubuntu}, tj. obdélník znázorňující disk, v~němž jsou barevně vyznačeny diskové oddíly.
 
 \section{Programy sloužící pro manipulaci s~disky}
 
@@ -116,18 +110,11 @@ a~tím dosahuje efektu WYSIWYG editoru (What You See Is What You Get, editor, kt
 \includegraphics[width=.8\columnwidth]{pics/gparted-5-big.png}\\
 \end{figure}
 
-\subsection{Blivet-gui}
+\subsection{Blivet-gui\cite{blivet-gui}}
 
 Druhým příkladem je program na manipulaci s~disky, který je součástí instalátoru Anaconda, využívá knihovnu nazvanou blivet\index{blivet}. Knihovna blivet\index{blivet} je základem pro všechny systémy vycházející ze systému RHEL. Autoři 
 se zprvu rozhodli použít známé schéma, avšak brzy narazili na problém s~větším počtem disků včetně virtuálních. Na obrázku vidíme, že současné řešení je nedostatečné a~použití grafu by
 situaci zpřehlednilo. Jednotlivé úrovně barevných rámců jsou znázorněny samostatnými uzly grafu s~hranami vyznačujícími vztahy mezi nimi. 
 \printbibliography
-
-\begin{figure}[hb]
-\label{fig:blivet}
-\caption{Ukázka programu blivet-gui~\cite{blivet-gui}}
-\centering
-\includegraphics[width=.8\columnwidth]{pics/blivet-gui-1.png}\\
-\end{figure}
 \printindex
 \end{document}
