@@ -1,4 +1,5 @@
-filenametemplate "%j-%3c.mps";
+%filenametemplate "%j-%3c.mps";
+filenametemplate "%j.mps";
 beginfig(173)
 vardef inversion (expr O,k,M) =
 	if pair M:
